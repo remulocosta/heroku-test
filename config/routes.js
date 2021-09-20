@@ -1,4 +1,8 @@
 module.exports = app => {
+  app.get('/', (req, res) => {
+    res.json({ Heroku:  'running!' })
+  })
+
   app.post('/signup', app.api.user.save)
     .post('/signin', app.api.auth.signin)
     .post('/validateToken', app.api.auth.validateToken)
