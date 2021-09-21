@@ -5,10 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
-    "start": "node index.js",
-    "prepare": "husky install",
-    "lint": "./node_modules/.bin/eslint ./ --fix",
-    "test": "NODE_ENV=testing jest --coverage"
+    "start": "node index.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
