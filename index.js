@@ -1,6 +1,6 @@
 const app = require('express')();
 const consign = require('consign');
-const db = require('./config/db');
+const db = require('./knexfile');
 
 app.db = db;
 
@@ -12,6 +12,6 @@ consign()
   .then('./config/routes.js')
   .into(app);
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log('running backend on port 5000');
 });
