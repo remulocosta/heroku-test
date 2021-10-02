@@ -1,4 +1,4 @@
-const { db } = require('./.env');
+const { db } = require('./app.config');
 
 module.exports = {
   client: 'mysql2',
