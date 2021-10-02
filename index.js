@@ -1,3 +1,6 @@
+require('dotenv').config({
+    path: process.env.NODE_ENV === "prod" ? ".env" : ".env.local"
+})
 const app = require('express')();
 const consign = require('consign');
 const db = require('./config/db');
